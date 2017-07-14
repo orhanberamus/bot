@@ -4,7 +4,7 @@ lyrics = ""
 artist = ""
 song_name = ""
 genius = "genius"
-
+#while lyrics = "" || artist = "" ||  song_name = "" do
    
 
 browser = Watir::Browser.new :chrome
@@ -22,7 +22,7 @@ artist = doc.css('a.header_with_cover_art-primary_info-primary_artist').text
 song_name = doc.css('h1.header_with_cover_art-primary_info-title').text
 puts song_name 
 
-
+#end
 
 
 part = Array.new(140, "")
