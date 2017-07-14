@@ -19,8 +19,8 @@ function tweetEvent (eventMsg){
     console.log(replyto + " " + from);
    
     if(eventMsg.in_reply_to_status_id_str === twitId){
-        var newTweet = '@' + from + ' NOOOOO';
-        reply(newTweet, replyId);
+        //var newTweet = '@' + from + ' NOOOOO';
+        reply(from, text, replyId);
         console.log("reply to id = " + replyId);
     }
    /* var fs = require('fs');
@@ -47,7 +47,8 @@ function tweet (text) {
     }
    
 }
-function reply (text, replyId) {
+function reply (from, userAnswer, replyId) {
+    var botAnswer = readFile(userAnswer);
     var content = {
         in_reply_to_status_id: replyId,
         status: text
@@ -66,6 +67,57 @@ function reply (text, replyId) {
         }
     }
    
+}
+function readFile (userAnswer){
+    var artist;
+    var song;
+    var botAnswer = "";
+    var fs = require('fs')
+    var filename = "out.txt"
+    fs.readFile(filename, 'utf8', function(err, data) {
+      if (err) {
+          throw err;
+          botAnswer = "There was an error =(";
+      }
+      //console.log('OK: ' + filename);
+      //console.log(data);
+      var res = data.split(/[\r\n]+/);
+        console.log(res);
+        //console.log(res);
+        artist = res[0];
+        song = res[1];
+    
+        //console.log("Artist > " + artist);
+        //console.log("Song > " + song);
+        compareAnswer(String(artist), String(song), userAnswer);
+        
+    });
+    return botAnswer;
+    
+}
+function compareAnswer(artist, song, userAnswer){
+    //console.log(answer);
+    var botAnswer = "";
+    var rArtist = new RegExp(artist, "gi");
+    var rSong = new RegExp(song, "gi");
+    console.log("Artist > " + rArtist);
+    if(userAnswer.match(rArtist) && userAnswer.match(rSong)){
+        console.log("Correct!!");
+        botAnswer = "Correct!!";
+    }
+    else if(userAnswer.match(rArtist)){
+        console.log("What is the song name?");
+        botAnswer = "What is the song name?";
+    }
+    else if(userAnswer.match(rSong)){
+        console.log("Who is the artist?");
+        botAnswer = "Who is the artist?";
+    }
+    else {
+        console.log("Try again :):):)");
+        botAnswer = "Try again :):):)";
+    }
+    return botAnswer;
 }
 
 

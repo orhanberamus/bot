@@ -10,7 +10,7 @@ genius = "genius"
 browser = Watir::Browser.new :chrome
 #browser.minimize
 browser.goto "http://www.google.com/"
-browser.text_field(title: "Ara").set"pink floyd hey you #{genius}"
+browser.text_field(title: "Ara").set"tove lo habits #{genius}"
 browser.button(type: "submit").click
 browser.h3s(class: 'r')[0].click 
 doc = Nokogiri::HTML.parse(browser.html)
@@ -72,6 +72,9 @@ end
 stringpart = part.join("")
 stringpart.gsub!('{','\n')
 puts stringpart
+toWriteString = artist + "\n" + song_name;
+
+File.open("out.txt", 'w') {|f| f.write(toWriteString) }
 
 
   
