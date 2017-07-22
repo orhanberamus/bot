@@ -58,3 +58,30 @@
 [0711/180752.551:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
 [0711/180752.551:ERROR:exception_snapshot_win.cc(87)] thread ID 8180 not found in process
 [0711/180752.551:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0714/193632.775:ERROR:process_reader_win.cc(123)] NtOpenThread: {Eriþim Yok} Bir iþlem bir nesneye eriþmek istedi, ancak istediði eriþimin haklarý kendisine verilmiþ deðil.  (0xc0000022)
+[0714/193632.782:ERROR:exception_snapshot_win.cc(87)] thread ID 7304 not found in process
+[0714/193632.782:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0721/010703.202:ERROR:process_reader_win.cc(123)] NtOpenThread: {Eriþim Yok} Bir iþlem bir nesneye eriþmek istedi, ancak istediði eriþimin haklarý kendisine verilmiþ deðil.  (0xc0000022)
+[0721/010703.228:ERROR:exception_snapshot_win.cc(87)] thread ID 9336 not found in process
+[0721/010703.229:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0722/185743.247:ERROR:process_reader_win.cc(123)] NtOpenThread: {Eriþim Yok} Bir iþlem bir nesneye eriþmek istedi, ancak istediði eriþimin haklarý kendisine verilmiþ deðil.  (0xc0000022)
+[0722/185743.265:ERROR:exception_snapshot_win.cc(87)] thread ID 5568 not found in process
+[0722/185743.265:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0722/194853.912:ERROR:process_reader_win.cc(123)] NtOpenThread: {Eriþim Yok} Bir iþlem bir nesneye eriþmek istedi, ancak istediði eriþimin haklarý kendisine verilmiþ deðil.  (0xc0000022)
+[0722/194853.912:ERROR:exception_snapshot_win.cc(87)] thread ID 8296 not found in process
+[0722/194853.912:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0722/194853.913:ERROR:process_reader_win.cc(123)] NtOpenThread: {Eriþim Yok} Bir iþlem bir nesneye eriþmek istedi, ancak istediði eriþimin haklarý kendisine verilmiþ deðil.  (0xc0000022)
+[0722/194853.914:ERROR:exception_snapshot_win.cc(87)] thread ID 8248 not found in process
+[0722/194853.914:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0722/194853.949:ERROR:process_reader_win.cc(123)] NtOpenThread: {Eriþim Yok} Bir iþlem bir nesneye eriþmek istedi, ancak istediði eriþimin haklarý kendisine verilmiþ deðil.  (0xc0000022)
+[0722/194853.950:ERROR:exception_snapshot_win.cc(87)] thread ID 8268 not found in process
+[0722/194853.950:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0722/195559.123:ERROR:process_reader_win.cc(123)] NtOpenThread: {Eriþim Yok} Bir iþlem bir nesneye eriþmek istedi, ancak istediði eriþimin haklarý kendisine verilmiþ deðil.  (0xc0000022)
+[0722/195559.124:ERROR:exception_snapshot_win.cc(87)] thread ID 8396 not found in process
+[0722/195559.124:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0722/195559.137:ERROR:process_reader_win.cc(123)] NtOpenThread: {Eriþim Yok} Bir iþlem bir nesneye eriþmek istedi, ancak istediði eriþimin haklarý kendisine verilmiþ deðil.  (0xc0000022)
+[0722/195559.137:ERROR:exception_snapshot_win.cc(87)] thread ID 1840 not found in process
+[0722/195559.137:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0722/195907.241:ERROR:process_reader_win.cc(123)] NtOpenThread: {Eriþim Yok} Bir iþlem bir nesneye eriþmek istedi, ancak istediði eriþimin haklarý kendisine verilmiþ deðil.  (0xc0000022)
+[0722/195907.241:ERROR:exception_snapshot_win.cc(87)] thread ID 520 not found in process
+[0722/195907.241:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed

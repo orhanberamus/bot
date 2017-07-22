@@ -58,7 +58,6 @@ function reply (from, userAnswer, replyId) {
     var content = {
         in_reply_to_status_id: replyId,
         status: botAnswer
-        
     }
     T.post('statuses/update', content, isTweet);
     function isTweet(err, data, response){
@@ -77,20 +76,34 @@ function reply (from, userAnswer, replyId) {
 
 function readFile (filename){
     var content  = "";
-     var fs = require("fs");
+    var fs = require("fs");
     content = fs.readFileSync(filename,'utf8');
     return content;
 }
+function writeFile(filename){
+    var fs = require('fs');
+    fs.appendFile('posted.txt', "\n" + song, function(err) {
+        if (err) throw err;
+        console.log("Recorded -> " + song);
+    });
+}
+function checkSong(song){
+    var array = readFile('posted.txt').split("\n");
+    for(i in array){
+        if (array[i] === song){
+            console.log("Error Already Posted"); 
+            return false;
+        }
+    }
+    console.log("Available Song");
+    return true;
+    //console.log(readFile('posted.txt'));
+}
 function getArtistLyrics(data){
-        res = data.split(/[\r\n]+/);
-        //console.log(res);
-        //console.log(res);
-        artist = res[0];
-        song = res[1];
-    
-        //console.log("Artist > " + artist);
-        //console.log("Song > " + song);
-        return [artist, song];
+    res = data.split(/[\r\n]+/);
+    artist = res[0];
+    song = res[1];
+    return [artist, song];
         
 }
 function getLyrics(data){
