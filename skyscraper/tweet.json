@@ -1,8 +1,8 @@
 {
-  "created_at": "Sat Jul 22 17:00:18 +0000 2017",
-  "id": 888805915960369200,
-  "id_str": "888805915960369152",
-  "text": "Correct &lt;3 &lt;3",
+  "created_at": "Mon Jul 24 20:40:52 +0000 2017",
+  "id": 889586200092323800,
+  "id_str": "889586200092323840",
+  "text": "Kells\nWho the fuck want it with him?",
   "truncated": false,
   "entities": {
     "hashtags": [],
@@ -11,11 +11,11 @@
     "urls": []
   },
   "source": "<a href=\"https://google.com\" rel=\"nofollow\">OrhanBot</a>",
-  "in_reply_to_status_id": 888805913431339000,
-  "in_reply_to_status_id_str": "888805913431339009",
-  "in_reply_to_user_id": 3120225974,
-  "in_reply_to_user_id_str": "3120225974",
-  "in_reply_to_screen_name": "orhanbot",
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
   "user": {
     "id": 3120225974,
     "id_str": "3120225974",
@@ -39,7 +39,7 @@
     "time_zone": "Pacific Time (US & Canada)",
     "geo_enabled": false,
     "verified": false,
-    "statuses_count": 9,
+    "statuses_count": 10,
     "lang": "tr",
     "contributors_enabled": false,
     "is_translator": false,
